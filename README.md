@@ -1,27 +1,35 @@
-# Dockerized Nginx Web Server
+# Docker Nginx Web Server
 
-## Project Overview
+## 📌 Overview
 
-This project demonstrates how to deploy a static website using Nginx inside a Docker container.
+This project demonstrates how to deploy an Nginx web server using Docker.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- Ubuntu Linux
 - Docker
 - Nginx
+- Linux
 - HTML
-- Git
-- GitHub
+- Git & GitHub
 
-## Project Architecture
+## 🚀 What I Did
 
-Browser → Docker Container → Nginx → HTML Website
+- Installed Docker on Ubuntu
+- Created an Nginx web server container
+- Configured port mapping
+- Hosted a web page using Nginx
+- Accessed the application through the browser
 
-## Dockerfile
-
-The Dockerfile uses the official Nginx image and copies the custom HTML page into the Nginx web root.
-
-## Build Docker Image
+## ⚙️ Docker Commands
 
 ```bash
-docker build -t ahmed-nginx-web .
+docker build -t nginx-webserver .
+docker run -d -p 8081:80 nginx-webserver
+docker ps
+docker stop <container_id>
+## 🌐 Website Access
+
+Open in your browser:
+
+```text
+http://localhost:8081
